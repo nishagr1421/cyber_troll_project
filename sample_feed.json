@@ -1,0 +1,108 @@
+[
+  {
+    "id": "post_1",
+    "username": "johndoe",
+    "caption": "Beautiful sunset today! 🌅 #nature #photography",
+    "image_url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600",
+    "timestamp": "2024-01-15T10:30:00Z",
+    "likes": 42,
+    "image_toxicity_score": 0.15,
+    "comments": [
+      {
+        "id": "comment_1",
+        "text": "Amazing shot! Love the colors.",
+        "username": "photographer123",
+        "timestamp": "2024-01-15T10:35:00Z",
+        "toxicity_score": 0.05,
+        "top_tokens": [],
+        "accepted": true
+      },
+      {
+        "id": "comment_2",
+        "text": "This is so stupid, who cares about sunsets?",
+        "username": "troll_user",
+        "timestamp": "2024-01-15T10:40:00Z",
+        "toxicity_score": 0.85,
+        "top_tokens": ["stupid"],
+        "accepted": false
+      },
+      {
+        "id": "comment_3",
+        "text": "Great work! Keep it up!",
+        "username": "artlover",
+        "timestamp": "2024-01-15T11:00:00Z",
+        "toxicity_score": 0.08,
+        "top_tokens": [],
+        "accepted": true
+      }
+    ]
+  },
+  {
+    "id": "post_2",
+    "username": "traveler_amy",
+    "caption": "Just landed in Tokyo! So excited to explore 🗼",
+    "image_url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600",
+    "timestamp": "2024-01-14T08:20:00Z",
+    "likes": 128,
+    "image_toxicity_score": 0.12,
+    "comments": [
+      {
+        "id": "comment_4",
+        "text": "Have fun! Tokyo is amazing!",
+        "username": "wanderlust",
+        "timestamp": "2024-01-14T08:25:00Z",
+        "toxicity_score": 0.06,
+        "top_tokens": [],
+        "accepted": true
+      },
+      {
+        "id": "comment_5",
+        "text": "I hate you and your stupid travel posts",
+        "username": "hater_account",
+        "timestamp": "2024-01-14T08:30:00Z",
+        "toxicity_score": 0.92,
+        "top_tokens": ["hate", "stupid"],
+        "accepted": false
+      },
+      {
+        "id": "comment_6",
+        "text": "Safe travels! Can't wait to see more photos!",
+        "username": "friend_123",
+        "timestamp": "2024-01-14T09:00:00Z",
+        "toxicity_score": 0.04,
+        "top_tokens": [],
+        "accepted": true
+      }
+    ]
+  },
+  {
+    "id": "post_3",
+    "username": "foodie_master",
+    "caption": "Homemade pasta for dinner tonight 🍝",
+    "image_url": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600",
+    "timestamp": "2024-01-13T18:45:00Z",
+    "likes": 89,
+    "image_toxicity_score": 0.08,
+    "comments": [
+      {
+        "id": "comment_7",
+        "text": "Looks delicious! Recipe?",
+        "username": "cooking_fan",
+        "timestamp": "2024-01-13T19:00:00Z",
+        "toxicity_score": 0.07,
+        "top_tokens": [],
+        "accepted": true
+      },
+      {
+        "id": "comment_8",
+        "text": "You're such an idiot, that looks terrible",
+        "username": "mean_commenter",
+        "timestamp": "2024-01-13T19:15:00Z",
+        "toxicity_score": 0.88,
+        "top_tokens": ["idiot", "terrible"],
+        "accepted": false
+      }
+    ]
+  }
+]
+
