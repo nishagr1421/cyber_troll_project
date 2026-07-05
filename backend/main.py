@@ -157,7 +157,7 @@ async def create_post_endpoint(
             
             # Use backend server URL for image (served as static file)
             #image_url = f"http://localhost:8000/uploads/{image_filename}"
-             image_url = f"{BACKEND_URL}/uploads/{image_filename}"
+            image_url = f"{BACKEND_URL}/uploads/{image_filename}"
         
         result = await create_post(username, caption, image_url)
         return JSONResponse(content=result)
