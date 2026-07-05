@@ -17,7 +17,7 @@ app = FastAPI(title="InstaGuard API", version="1.0.0")
 app.add_middleware(
     CORSMiddleware,
     #allow_origins=["http://localhost:3000", "http://localhost:5173"],
-    allow_origins=["*"]
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -28,6 +28,11 @@ os.makedirs("data", exist_ok=True)
 os.makedirs("models", exist_ok=True)
 UPLOAD_DIR = "data/uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
+BACKEND_URL = os.getenv(
+    "BACKEND_URL",
+    "http://localhost:8000"
+)
+
 FEED_FILE = "data/feed.json"
 ANNOTATIONS_FILE = "data/annotations.csv"
 
@@ -151,7 +156,8 @@ async def create_post_endpoint(
                 f.write(content)
             
             # Use backend server URL for image (served as static file)
-            image_url = f"http://localhost:8000/uploads/{image_filename}"
+            #image_url = f"http://localhost:8000/uploads/{image_filename}"
+             image_url = f"{BACKEND_URL}/uploads/{image_filename}"
         
         result = await create_post(username, caption, image_url)
         return JSONResponse(content=result)
